@@ -12,3 +12,7 @@ def evaluate_response(text):
      # Grammar: Check for errors
     grammar_errors = len(tool.check(text))
     grammar_score = max(0, 10 - grammar_errors)
+
+     # Vocabulary: Count unique words
+    unique_words = set(words)
+    vocabulary_score = len(unique_words) / len(words) * 10
