@@ -5,3 +5,4 @@ from text_to_speech import speak_text
 from scoring import evaluate_response
 from feedback import generate_feedback
 
+st.title("IELTS Speaking Simulator")
