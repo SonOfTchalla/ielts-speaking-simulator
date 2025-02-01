@@ -16,3 +16,9 @@ def evaluate_response(text):
      # Vocabulary: Count unique words
     unique_words = set(words)
     vocabulary_score = len(unique_words) / len(words) * 10
+
+    return {
+        "fluency": fluency_score,
+        "grammar": grammar_score,
+        "vocabulary": vocabulary_score,
+    }
