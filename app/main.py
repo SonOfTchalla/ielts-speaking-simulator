@@ -6,3 +6,6 @@ from scoring import evaluate_response
 from feedback import generate_feedback
 
 st.title("IELTS Speaking Simulator")
+
+if "conversation" not in st.session_state:
+    st.session_state.conversation = []
