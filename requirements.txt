@@ -1,6 +1,6 @@
-streamlit==1.26.0
-speechrecognition==3.8.1
-transformers==4.30.0
-pyttsx3==2.90
-nltk==3.8.1
-language-tool-python==2.7.0
+streamlit
+speechrecognition
+transformers
+pyttsx3
+nltk
+language-tool-python
