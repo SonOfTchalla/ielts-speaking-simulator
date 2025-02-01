@@ -1,8 +1,10 @@
 from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 
 
-# Load pre-trained conversational model
-chatbot = pipeline("conversational")
+# Load pre-trained conversational model (DialoGPT)
+model_name = "microsoft/DialoGPT-medium"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
 
 # Response generation function
 def generate_response(user_input):
