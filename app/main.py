@@ -9,3 +9,6 @@ st.title("IELTS Speaking Simulator")
 
 if "conversation" not in st.session_state:
     st.session_state.conversation = []
+
+for role, text in st.session_state.conversation:
+    st.write(f"{role}: {text}")
