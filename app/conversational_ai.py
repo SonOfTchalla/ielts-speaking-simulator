@@ -11,5 +11,6 @@ chatbot = pipeline("text-generation", model=model, tokenizer=tokenizer)
 
 # Response generation function
 def generate_response(user_input):
-    response = chatbot(user_input)[0]["generated_text"]
+     # Generate a response using the chatbot
+    response = chatbot(user_input, max_length=50, num_return_sequences=1)[0]["generated_text"]
     return response
