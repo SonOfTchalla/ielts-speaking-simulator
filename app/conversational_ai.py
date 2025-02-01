@@ -1,4 +1,5 @@
-from transformers import pipeline
+from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
+
 
 # Load pre-trained conversational model
 chatbot = pipeline("conversational")
